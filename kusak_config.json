@@ -1,0 +1,58 @@
+{
+  "symbol": "BTCUSDT",
+  "market": "SPOT",
+  "api_key": "TEST_KEY",
+  "api_secret": "TEST_SECRET",
+  "dry_run": true,
+  "testnet": false,
+  "verbose": true,
+
+  "quote_asset": "USDT",
+  "balance_source": "auto",
+  "recvWindow_ms": 5000,
+  "min_free_usdt": 5.0,
+  "log_raw_account_json": false,
+
+  "vpin_bucket_mult": 50,
+  "vpin_n_buckets": 50,
+  "vpin_use_dynamic": false,
+  "vpin_dynamic_window": 200,
+  "vpin_dynamic_k": 2.0,
+  "vpin_vel_surge_thr": 0.99,
+  "vpin_level_high": 0.99,
+  "vpin_level_crit": 0.99,
+
+  "hmm_enter_threshold": 0.99,
+  "hmm_exit_threshold": 0.99,
+  "hmm_persistence": 0,
+
+  "w_vpin": 0.0,
+  "w_hmm": 0.0,
+  "w_obi": 0.0,
+  "w_spread": 0.0,
+  "w_depth": 0.0,
+  "risk_allow_thr": 0.99,
+  "risk_caution_thr": 0.99,
+  "risk_pause_thr": 9.99,
+
+  "latency_alert_us": 5000,
+  "report_every_n": 10000,
+
+  "cancel_track_win_us": 500000,
+  "cancel_thr_bps": 0.0,
+
+  "exchangeinfo_ttl_s": 3600,
+
+  "write_csv": true,
+  "write_prometheus": true,
+  "csv_path": "telemetry.csv",
+  "prom_path": "metrics.prom",
+
+  "max_order_rate_per_s": 100.0,
+  "max_fill_rate_floor": 0.0,
+
+  "initial_capital": 1000.0,
+  "buy_pct": 0.10,
+  "kelly_fraction": 0.0,
+  "max_position_usd": 500.0
+}

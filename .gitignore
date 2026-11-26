@@ -1,0 +1,100 @@
+# ---------------------------------------------------------------------------
+# KUSAK-INFRA .gitignore (arsiv yayini)
+# ---------------------------------------------------------------------------
+
+# --- Gizli bilgiler / ortam dosyalari (.env.example haric) ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+secrets/
+kusak_config*.local.json
+
+# --- Derleme ciktilari ---
+build/
+cmake-build-*/
+_deps/
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+compile_commands.json
+*.o
+*.obj
+*.a
+*.so
+*.so.*
+*.dylib
+*.dll
+*.exe
+*.out
+*.s
+# Kok dizindeki eski derleme artefaktlari (uzantisiz ELF dosyalari)
+/kusak_engine
+/kusak_v13
+/fsm_test
+/spillover_test
+/test_kusak
+/tsc_overflow_test
+/mvp_order_bridge_test
+/replay_harness
+/research
+/research_record
+
+# --- Calisma ciktilari: log, telemetri, metrik ---
+*.log
+telemetry.csv
+metrics.prom
+kusak_metrics.prom
+kusak_kill_switch.lock
+*_params.txt
+# README test komutlarinin urettigi binary ve cikti dizini
+out/
+obi_research/
+results/
+
+# --- Ham piyasa verisi ---
+data/
+*.tick
+*.csv
+*.parquet
+*.feather
+*.h5
+*.zip
+*.gz
+
+# --- Yama gecmisi / birlesme artiklari ---
+*.orig
+*.rej
+*.patch
+*.diff
+
+# --- Gecici deney notlari ---
+rapor*.md
+SHARED_NOTES*.md
+*_scratch.*
+scratch/
+notes/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# --- IDE / editor / isletim sistemi ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Ic ice git deposu ---
+# Eski include/.git dizini yayin oncesi depo disina tasindi. Alt dizinlerde
+# .git birakilmamali; aksi halde kok depo o dizini gitlink olarak ekler ve
+# icerigi yayina girmez.

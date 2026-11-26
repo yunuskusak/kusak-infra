@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use or reference this archive, please cite it using the metadata below."
+type: software
+title: "KUSAK-INFRA: C++20 Order Execution Engine and Pre-Registered Retail Crypto Signal Research Archive"
+abstract: >-
+  Archived C++20 / Linux x86-64 single-symbol order execution engine for
+  Binance Spot and USD-M Futures (lock-free SPSC rings, table-driven order
+  state machine, fail-closed order firewall, kill switch, startup
+  reconciliation), together with pre-registered signal research records.
+  240 pre-registered hypothesis cells documented in this repository yielded
+  0 net-positive candidates after retail Binance VIP 0 costs. Three P0 safety
+  findings remain open; the engine was never traded with real capital.
+authors:
+  - family-names: "Kuşak"
+    given-names: "Yunus"
+    website: "https://yunuskusak.cloud"
+repository-code: "https://github.com/yunuskusak/KUSAK-INFRA"
+url: "https://yunuskusak.cloud"
+license: MIT
+date-released: "2026-11-26"
+keywords:
+  - cpp20
+  - algorithmic-trading
+  - execution-engine
+  - lock-free
+  - spsc
+  - binance
+  - market-microstructure
+  - quantitative-research
+  - crypto-trading-bot
+  - fail-closed

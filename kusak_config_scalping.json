@@ -1,0 +1,69 @@
+{
+  "_comment": "KUSAK V12 — Scalping / Baseline Stress Test yapılandırması",
+  "_comment2": "ARSIV: dry_run=true kalmalidir. Acik P0 bulgulari nedeniyle canli islemde, gercek parayla veya gercek anahtarla KULLANMAYIN (README.md).",
+
+  "symbol":          "BTCUSDT",
+  "dry_run":         true,
+  "testnet":         false,
+  "verbose":         true,
+
+  "quote_asset":          "USDT",
+  "balance_source":       "auto",
+  "recvWindow_ms":        5000,
+  "min_free_usdt":        5.0,
+  "log_raw_account_json": false,
+
+  "_section_vpin": "──── VPIN — scalping için daha duyarlı eşikler ────",
+  "vpin_bucket_mult":    50,
+  "vpin_n_buckets":      50,
+  "vpin_use_dynamic":    true,
+  "vpin_dynamic_window": 200,
+  "vpin_dynamic_k":      3.0,
+  "vpin_vel_surge_thr":  0.65,
+  "vpin_level_high":     0.80,
+  "vpin_level_crit":     0.95,
+
+  "_section_hmm": "──── HMM — yüksek güven eşiği, scalping'de sinyal kalitesi ────",
+  "hmm_enter_threshold": 0.90,
+  "hmm_exit_threshold":  0.65,
+  "hmm_persistence":     2,
+
+  "_section_risk": "──── Risk Skoru — TÜM ağırlıklar 0.0, evaluate() daima ALLOW döner ────",
+  "w_vpin":           0.0,
+  "w_hmm":            0.0,
+  "w_obi":            0.0,
+  "w_spread":         0.0,
+  "w_depth":          0.0,
+  "risk_allow_thr":   1.0,
+  "risk_caution_thr": 1.1,
+  "risk_pause_thr":   1.2,
+
+  "_section_trailing": "──── Trailing Stop — ResearchParams üzerinden gelir, JSON'dan OKUNMAZ ────",
+  "_trailing_note":    "trailing_activation_bps ve trailing_callback_bps config.hpp parser'ında tanımlı değil.",
+  "_trailing_note2":   "Bu değerleri research_types.hpp varsayılanlarıyla (5.0 / 2.0) veya",
+  "_trailing_note3":   "optimizer JSON çıktısı (best_params) ile ayarlayın.",
+
+  "_section_latency": "──── Telemetri / Raporlama ────",
+  "latency_alert_us": 5000,
+  "report_every_n":   10000,
+
+  "cancel_track_win_us": 500000,
+  "cancel_thr_bps":      7.0,
+
+  "exchangeinfo_ttl_s": 3600,
+
+  "write_csv":        true,
+  "write_prometheus": true,
+  "csv_path":         "telemetry.csv",
+  "prom_path":        "metrics.prom",
+
+  "_section_orders": "──── Emir hızı limitleri ────",
+  "max_order_rate_per_s": 10.0,
+  "max_fill_rate_floor":  0.10,
+
+  "_section_capital": "──── Sermaye & Pozisyon Boyutu ────",
+  "initial_capital":   1000.0,
+  "buy_pct":           0.20,
+  "kelly_fraction":    0.0,
+  "max_position_usd":  300.0
+}
