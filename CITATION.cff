@@ -1,15 +1,23 @@
 cff-version: 1.2.0
 message: "If you use or reference this archive, please cite it using the metadata below."
 type: software
-title: "KUSAK-INFRA: C++20 Order Execution Engine and Pre-Registered Retail Crypto Signal Research Archive"
+title: "KUSAK-INFRA: 11-Month Pre-Registered Quantitative Research and Low-Latency C++20 Execution Engine Archive"
 abstract: >-
-  Archived C++20 / Linux x86-64 single-symbol order execution engine for
-  Binance Spot and USD-M Futures (lock-free SPSC rings, table-driven order
-  state machine, fail-closed order firewall, kill switch, startup
-  reconciliation), together with pre-registered signal research records.
-  240 pre-registered hypothesis cells documented in this repository yielded
-  0 net-positive candidates after retail Binance VIP 0 costs. Three P0 safety
-  findings remain open; the engine was never traded with real capital.
+  Archive of an 11-month (Dec 2025 - Nov 2026) pre-registered quantitative
+  research program and the low-latency C++20 / Linux x86-64 execution engine
+  built for it. The single-symbol engine for Binance Spot and USD-M Futures
+  uses lock-free SPSC rings between pinned threads, a table-driven 14-state
+  order state machine with an explicit UNKNOWN state, a fail-closed order
+  firewall, a kill switch and startup reconciliation; 11 test suites pass
+  492 checks with 0 failures. The engine went through hundreds of hours of
+  runs and observation across Binance Spot testnet, live market data and
+  controlled real-capital scenarios. 504 pre-registered hypothesis cells
+  across 8 study families (grids, cost models and decision rules fixed in
+  advance; Bonferroni or Holm correction) yielded 0 net-positive candidates
+  under retail Binance VIP 0 costs: gross moves of a few bps to about +20 bps
+  at 5 s - 24 h horizons did not clear 10-30 bps round-trip costs and maker
+  adverse selection. The engine was deliberately not moved to permanent live
+  capital before its P0 safety closing gate was completed.
 authors:
   - family-names: "Kuşak"
     given-names: "Yunus"
@@ -20,13 +28,19 @@ doi: 10.5281/zenodo.24562190
 license: MIT
 date-released: "2026-11-26"
 keywords:
-  - cpp20
-  - algorithmic-trading
-  - execution-engine
-  - lock-free
-  - spsc
-  - binance
-  - market-microstructure
   - quantitative-research
-  - crypto-trading-bot
+  - pre-registration
+  - hypothesis-testing
+  - multiple-testing-correction
+  - negative-results
+  - market-microstructure
+  - adverse-selection
+  - transaction-costs
+  - cpp20
+  - low-latency
+  - lock-free
+  - spsc-ring-buffer
+  - execution-engine
+  - order-state-machine
   - fail-closed
+  - binance
