@@ -1,5 +1,9 @@
 # KUSAK-INFRA
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24562190.svg)](https://doi.org/10.5281/zenodo.24562190)
+
+> **11-month pre-registered quantitative research & low-latency C++20 execution engine archive (Dec 2025 – Nov 2026).** Evaluates 504 pre-registered hypothesis cells on Binance Spot / USDⓈ-M Futures with a lock-free SPSC, fail-closed engine — finding 0 net-positive candidates under retail VIP 0 costs (`DOI: 10.5281/zenodo.24562190`).
+
 C++20 / Linux / x86-64 üzerinde, tek sembollü (Binance SPOT veya USDⓈ-M FUTURES) bir emir yürütme motoru ve bu motorla 11 ay boyunca yürütülen, **504 hipotez hücresini** kapsayan ön kayıtlı sinyal araştırmasının mühendislik ve araştırma arşivi.
 
 ---
@@ -90,7 +94,8 @@ C++20 / Linux / x86-64 üzerinde, tek sembollü (Binance SPOT veya USDⓈ-M FUTU
 11. [Depo düzeni](#depo)
 12. [Sık sorulan teknik sorular (FAQ)](#faq)
 13. [İletişim ve iş birliği](#iletisim)
-14. [Lisans](#lisans)
+14. [Atıf (Citation)](#atif)
+15. [Lisans](#lisans)
 
 ---
 
@@ -395,6 +400,14 @@ Aşağıdaki konularda görüşmeye açığım:
 - E-posta: <kusakyunus54@gmail.com>
 
 Değerlendirmenizi veri, kod veya ön kayıt üzerinden somutlaştırırsanız görüşmemiz daha verimli olur.
+
+<a id="atif"></a>
+
+## Atıf (Citation)
+
+Bu arşive atıf yapmak için kalıcı Zenodo DOI kaydını kullanın: <https://doi.org/10.5281/zenodo.24562190>
+
+Atıf meta verisi depo kökündeki `CITATION.cff` dosyasındadır. GitHub'daki **"Cite this repository"** düğmesi bu dosyadan APA ve BibTeX biçimlerini otomatik üretir.
 
 <a id="lisans"></a>
 

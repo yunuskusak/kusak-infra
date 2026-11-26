@@ -15,7 +15,8 @@ authors:
     given-names: "Yunus"
     website: "https://yunuskusak.cloud"
 repository-code: "https://github.com/yunuskusak/KUSAK-INFRA"
-url: "https://yunuskusak.cloud"
+url: "https://github.com/yunuskusak/kusak-infra"
+doi: 10.5281/zenodo.24562190
 license: MIT
 date-released: "2026-11-26"
 keywords:
